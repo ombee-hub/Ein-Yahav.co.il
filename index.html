@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>עין יהב · ארץ הקיץ הנצחי</title>
+<meta name="description" content="עין יהב — הראשון והגדול במושבי הערבה. 200 משפחות, 143 משקים חקלאיים, חקלאות מתקדמת, תיירות וקהילה בלב הערבה התיכונה.">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="180x180" href="images/favicon-180.png">
+<link rel="apple-touch-icon" href="images/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="images/style.css">
+</head>
+<body>
+
+<div class="topbar"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="images/ein-yahav-logo.png" alt="לוגו עין יהב">
+    </a>
+    <button class="menu-btn" onclick="document.getElementById('mainmenu').classList.toggle('open')" aria-label="תפריט">☰</button>
+    <nav>
+            <ul id="mainmenu">
+        <li><a href="about.html">אודות</a></li>
+        <li class="has-drop">
+          <a href="agriculture.html" class="drop-toggle">חקלאות <span class="caret">▾</span></a>
+          <ul class="submenu">
+            <li><a href="agriculture.html">גידולים חקלאיים</a></li>
+            <li><a href="marketing.html">שיווק ויצוא</a></li>
+          </ul>
+        </li>
+        <li><a href="business.html">עסקים ותיירות</a></li>
+        <li class="has-drop">
+          <a href="community.html" class="drop-toggle">קהילה <span class="caret">▾</span></a>
+          <ul class="submenu">
+            <li><a href="community.html">עושים קהילה</a></li>
+            <li><a href="events.html">לוח אירועים</a></li>
+            <li><a href="hours.html">שעות פתיחה</a></li>
+            <li><a href="services.html">שירותים</a></li>
+            <li><a href="phones.html">בעלי תפקידים</a></li>
+            <li><a href="phonebook.html">ספר טלפונים</a></li>
+          </ul>
+        </li>
+        <li><a href="album.html">ארכיון</a></li>
+        <li><a href="emergency.html">טלפונים בחירום</a></li>
+        <li><a href="contact.html" class="contact-btn">יצירת קשר</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="container">
+    <span class="kicker">☀️ הראשון והגדול במושבי הערבה · מאז 1959</span>
+    <h1>עין יהב<br><span class="accent">ארץ הקיץ הנצחי</span></h1>
+    <p class="sub">בלב הערבה התיכונה, על אדמות שהיו מצודה רומאית בצומת הדרכים לפטרה, ים המלח ואילת, פורח היום מושב עובדים של <b>200 משפחות</b> — חקלאות מהמתקדמות בעולם, קהילה חמה ותיירות מדברית.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://www.youtube.com/watch?v=3-9VYvDVoFg" target="_blank" rel="noopener">▶ צפו בסרט התדמית</a>
+      <a class="btn btn-ghost" href="contact.html">עין יהב קולטת משפחות — דברו איתנו</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="num">1959</div><div class="lbl">שנת ההקמה</div></div>
+      <div class="stat"><div class="num">200</div><div class="lbl">משפחות · כ־800 תושבים</div></div>
+      <div class="stat"><div class="num">143</div><div class="lbl">משפחות חקלאיות</div></div>
+      <div class="stat"><div class="num">8,000</div><div class="lbl">דונם שטחי גידול</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0">
+  <div class="carousel" id="carousel" aria-label="גלריית תמונות מעין יהב">
+    <div class="car-track" id="carTrack">
+      <div class="car-slide"><img src="images/slider-1.jpg" alt="נופי עין יהב — שקיעה, שער הכניסה ורחוב המושב"></div>
+      <div class="car-slide"><img src="images/slider-2.jpg" alt="דקלים, שביל בין עצים ומטע תמרים בעין יהב"></div>
+      <div class="car-slide"><img src="images/slider-3.jpg" alt="נופי חקלאות וטבע בעין יהב"></div>
+      <div class="car-slide"><img src="images/slider-4.jpg" alt="נופי עין יהב והערבה"></div>
+      <div class="car-slide"><img src="images/greenhouses-1.jpg" alt="חממות ובתי רשת בעין יהב"></div>
+      <div class="car-slide"><img src="images/greenhouses-2.jpg" alt="שטחי גידול חקלאיים בעין יהב"></div>
+      <div class="car-slide"><img src="images/greenhouses-3.jpg" alt="מבני חקלאות מתקדמת בעין יהב"></div>
+    </div>
+    <button class="car-nav car-prev" aria-label="הקודם">‹</button>
+    <button class="car-nav car-next" aria-label="הבא">›</button>
+    <div class="car-dots" id="carDots"></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="eyebrow">ברוכים הבאים</div>
+      <h2>מה תמצאו באתר?</h2>
+      <p class="lead">כל המידע על המושב — ההיסטוריה, החקלאות, הקהילה, העסקים והשירותים — מרוכז בעמודים הבאים.</p>
+    </div>
+    <div class="tiles">
+      <a class="tile reveal" href="about.html"><div class="ico">🏜️</div><h3>אודות המושב</h3><p>ממצפה חקלאי בשממה למושב המוביל בערבה — הסיפור המלא וציר הזמן של אבני הדרך, מ־1932 ועד היום.</p><span class="more">לעמוד אודות</span></a>
+      <a class="tile reveal" href="album.html"><div class="ico">📷</div><h3>ארכיון</h3><p>המושבוץ — הווי ואווירה 1959–1967: תיעוד מצולם מחיי הקהילה, האירועים והחגים של הימים הראשונים.</p><span class="more">לאלבום הארכיון</span></a>
+      <a class="tile reveal" href="agriculture.html"><div class="ico">🫑</div><h3>חקלאות</h3><p>פלפל, מלון, עגבניות, חצילים, כרמים ותמרים — כ־8,000 דונם של חממות ובתי רשת בטכנולוגיה מהמתקדמות בעולם.</p><span class="more">לעמוד החקלאות</span></a>
+      <a class="tile reveal" href="marketing.html"><div class="ico">📦</div><h3>שיווק ויצוא</h3><p>"יופי של ירקות", חברות היצוא ובתי האריזה, וכל נותני השירות לחקלאי — עם אנשי הקשר המלאים.</p><span class="more">לעמוד שיווק ויצוא</span></a>
+      <a class="tile reveal" href="services.html"><div class="ico">🏥</div><h3>קהילה ושירותים</h3><p>מרפאה, מרפאת שיניים, בריכת השחייה, הספרייה, לוח ההודעות וספר הטלפונים הקהילתי.</p><span class="more">לעמוד השירותים</span></a>
+      <a class="tile reveal" href="business.html"><div class="ico">🛍️</div><h3>עסקים ותיירות</h3><p>כמאה חדרי צימרים, סדנאות, גלריות ובעלי מקצוע — אינדקס היזמויות והעסקים של עין יהב.</p><span class="more">לאינדקס העסקים</span></a>
+      <a class="tile reveal" href="community.html"><div class="ico">📣</div><h3>עושים קהילה</h3><p>עדכונים והודעות מחיי הקהילה: נוהל חירום, מיקומי מקלטים, לוח אירועים וספר טלפונים קהילתי.</p><span class="more">לעמוד הקהילה</span></a>
+      <a class="tile reveal" href="hours.html"><div class="ico">🕒</div><h3>שעות פתיחה</h3><p>מרפאה, בריכה, מחסני השוק, חדר כושר, מזכירות, ספרייה, דואר ואתר פסולת — כדי שתמיד תדעו אם פתוח.</p><span class="more">לשעות הפתיחה</span></a>
+      <a class="tile reveal" href="phones.html"><div class="ico">📇</div><h3>בעלי תפקידים</h3><p>כל הטלפונים החשובים של בעלי התפקידים במושב — מזכירות, מרכז משק, רכזות, רבש״צ ועוד.</p><span class="more">לרשימת הטלפונים</span></a>
+      <a class="tile reveal" href="emergency.html"><div class="ico">🚨</div><h3>טלפונים בחירום</h3><p>מוקדי חירום, עובדי ציבור וביטחון, מרפאות חוץ ומרפאות הערבה — כל המספרים בלחיצה אחת.</p><span class="more">לרשימת הטלפונים</span></a>
+      <a class="tile reveal" href="contact.html"><div class="ico">✉️</div><h3>צור קשר</h3><p>רוצים/ות להצטרף לארץ הקיץ הנצחי? עין יהב קולטת משפחות — כל דרכי ההתקשרות עם ועד היישוב.</p><span class="more">לעמוד צור קשר</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="agri-sec">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="eyebrow">על קצה המזלג</div>
+      <h2>המושב שלנו</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>עין יהב הוא <span class="highlight">הראשון והגדול במושבי הערבה</span>, ושייך למועצה האזורית הערבה התיכונה. היישוב הוקם בשנת 1959 כהיאחזות נח״ל, אוזרח ב־1962 והפך ל"מושבוץ" — שילוב של מושב וקיבוץ — וכיום הוא מושב עובדים.</p>
+        <p>רוב חברי המושב עוסקים בחקלאות: פלפל, עגבניות, מלונים, חצילים, כרמים ומטע תמרים משותף. לצד החקלאות פורחת תיירות מדברית עם כמאה חדרי צימרים, מרכזי מבקרים וגלריות.</p>
+        <p><a class="btn btn-primary" href="about.html">לסיפור המלא</a></p>
+      </div>
+      <div class="about-card reveal">
+        <div class="pad">
+          <h3>חקלאות בקצה הטכנולוגיה</h3>
+          <p>150 יחידות חקלאיות, לכל משפחה 50 דונם — בשטח כולל של כשמונת אלפים דונם, שרובו מבני חממות ובתי רשת מהמתקדמים בעולם. התוצרת נארזת בבתי האריזה ומשווקת בעיקרה ליצוא.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-accent"></div>
+  <div class="container">
+    <div class="foot-cta">
+      <div>
+        <h3>רוצים/ות להצטרף לארץ הקיץ הנצחי?</h3>
+        <p>עין יהב קולטת משפחות — בואו להכיר את הקהילה החמה של הערבה</p>
+      </div>
+      <a class="btn btn-primary" href="contact.html">יצירת קשר</a>
+    </div>
+    <div class="cols">
+      <div>
+        <img src="images/ein-yahav-logo-white.png" alt="עין יהב" class="footer-logo">
+        <p>הראשון והגדול במושבי הערבה. מושב עובדים מאז 1959: חקלאות מתקדמת, קהילה חמה ותיירות מדברית בלב הערבה התיכונה.</p>
+      </div>
+      <div>
+        <h4>ניווט באתר</h4>
+        <ul>
+          <li><a href="about.html">אודות המושב</a></li>
+          <li><a href="album.html">ארכיון</a></li>
+          <li><a href="agriculture.html">חקלאות</a></li>
+          <li><a href="marketing.html">שיווק ויצוא</a></li>
+          <li><a href="services.html">שירותים</a></li>
+          <li><a href="business.html">עסקים ותיירות</a></li>
+          <li><a href="community.html">עושים קהילה</a></li>
+          <li><a href="hours.html">שעות פתיחה</a></li>
+          <li><a href="events.html">לוח אירועים</a></li>
+          <li><a href="phones.html">בעלי תפקידים</a></li>
+          <li><a href="phonebook.html">ספר טלפונים</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>טלפונים שימושיים</h4>
+        <ul>
+          <li><span>מרפאה</span> <a href="tel:086581073" class="foot-phone">08-6581073</a></li>
+          <li><span>מזכירות</span> <a href="tel:086581131" class="foot-phone">08-6581131</a></li>
+          <li><span>משטרה</span> <a href="tel:100" class="foot-phone">100</a></li>
+          <li><span>מד״א</span> <a href="tel:101" class="foot-phone">101</a></li>
+          <li><a href="emergency.html">לכל הטלפונים בחירום</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>קישורים</h4>
+        <ul>
+          <li><a href="events.html">לוח אירועים</a></li>
+          <li><a href="https://www.youtube.com/watch?v=3-9VYvDVoFg" target="_blank" rel="noopener">סרט תדמית ביוטיוב</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="base">
+      <span>© 2026 כל הזכויות שמורות למושב עין יהב</span>
+      <span><a href="accessibility.html">הצהרת נגישות</a></span>
+      <span class="credit">עיצוב ובנייה ע״י: <a href="https://ombee.co.il" target="_blank" rel="noopener"><img src="images/ombee-logo-white.png" alt="OMBee — Graphic Design And UI/UX"></a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="images/site.js"></script>
+</body>
+</html>
