@@ -83,7 +83,7 @@ nav a{display:block;padding:8px 12px;border-radius:10px;font-weight:500;font-siz
 nav a:hover{background:var(--sand-deep);text-decoration:none;color:var(--orange-dark)}
 nav a.active,nav li.active > a{background:var(--orange);color:#fff}
 .caret{display:inline-block;font-size:13px;color:var(--orange);font-weight:800;margin-inline-start:3px;transition:transform .25s ease}
-.drawer-logo{display:none}
+.drawer-head{display:none}
 /* dropdown */
 nav .has-drop{position:relative}
 nav .submenu{list-style:none;position:absolute;top:100%;right:0;min-width:210px;background:var(--white);border:1px solid var(--sand-deep);border-radius:12px;box-shadow:var(--shadow-lg);padding:8px;z-index:120;
@@ -97,8 +97,19 @@ nav a.contact-btn:hover{background:var(--orange-dark);color:#fff}
 .menu-btn{display:none;order:-1;background:none;border:none;padding:0 4px;font-size:28px;line-height:1;color:var(--brown);cursor:pointer}
 
 /* ---------- hero (home) ---------- */
-.hero{position:relative;min-height:78vh;display:flex;align-items:center;color:#fff;
-  background:linear-gradient(160deg,rgba(43,26,10,.72) 0%,rgba(90,45,10,.55) 45%,rgba(226,112,31,.35) 100%),url('greenhouses-1.jpg') center/cover no-repeat}
+.hero{position:relative;min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden;background:var(--brown)}
+.hero .sub{margin-inline:auto}
+.hero .cta-row{justify-content:center}
+.hero .stats{margin-inline:auto}
+.hero .kicker{display:inline-block}
+.hero .hero-carousel{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero .hero-carousel .car-track,.hero .hero-carousel .car-slide{height:100%}
+.hero .hero-carousel .car-slide img{height:100%;min-height:100%}
+.hero .hero-carousel::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:linear-gradient(150deg,rgba(43,26,10,.78) 0%,rgba(43,26,10,.5) 45%,rgba(43,26,10,.35) 100%)}
+.hero .container{position:relative;z-index:3;pointer-events:none}
+.hero .container a,.hero .container button{pointer-events:auto}
+.hero .hero-carousel .car-nav,.hero .hero-carousel .car-dots{z-index:4}
 .hero .container{padding-top:90px;padding-bottom:90px}
 .hero .kicker{display:inline-block;background:var(--sun);color:var(--brown);font-weight:700;font-size:14.5px;padding:5px 16px;border-radius:99px;margin-bottom:20px;letter-spacing:.03em}
 .hero h1{font-size:clamp(44px,7vw,84px);font-weight:900;line-height:1.05;text-shadow:0 3px 24px rgba(0,0,0,.35)}
@@ -142,7 +153,7 @@ section{padding:84px 0}
 .car-nav:hover{background:#fff}
 .car-prev{right:16px}
 .car-next{left:16px}
-.car-dots{position:absolute;bottom:14px;right:0;left:0;display:flex;justify-content:center;gap:9px;z-index:3}
+.car-dots{display:none}
 .car-dots button{width:11px;height:11px;border-radius:50%;border:none;background:rgba(255,255,255,.55);cursor:pointer;padding:0;transition:background .15s ease,transform .15s ease}
 .car-dots button.on{background:var(--sun);transform:scale(1.25)}
 
@@ -337,7 +348,7 @@ footer .base{border-top:1px solid rgba(255,255,255,.14);padding-top:18px;display
     transform:translateX(105%);transition:transform .32s cubic-bezier(.4,0,.2,1);overflow-y:auto;z-index:200}
   nav ul#mainmenu.open{transform:translateX(0)}
   /* in-drawer header: logo on the RIGHT, ✕ on the LEFT (absolute = no RTL ambiguity) */
-  .drawer-head{position:relative;height:62px;border-bottom:1px solid var(--sand-deep);margin-bottom:6px}
+  .drawer-head{display:block;position:relative;height:62px;border-bottom:1px solid var(--sand-deep);margin-bottom:6px}
   .drawer-logo-link{position:absolute;top:50%;right:18px;transform:translateY(-50%);padding:0}
   .drawer-logo-link img{height:34px;width:auto;display:block}
   .drawer-close{position:absolute;top:50%;left:18px;transform:translateY(-50%);
