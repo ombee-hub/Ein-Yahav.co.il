@@ -238,8 +238,8 @@ table.contacts a{white-space:nowrap;direction:ltr;unicode-bidi:embed}
 .biz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;margin-bottom:40px}
 .biz{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .18s ease}
 .biz:hover{transform:translateY(-4px)}
-.biz .img{height:150px;background:var(--sand);display:flex;align-items:center;justify-content:center;overflow:hidden}
-.biz .img img{width:100%;height:100%;object-fit:cover}
+.biz .img{height:150px;background:var(--sand);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:14px}
+.biz .img img{width:100%;height:100%;object-fit:cover;border-radius:10px}
 .biz .pad{padding:16px 18px}
 .biz h3{font-size:17.5px;color:var(--brown);margin-bottom:4px}
 .biz p{font-size:14px;color:var(--ink-soft)}
